@@ -1,0 +1,164 @@
+2020-03-26 18:22:21,906 [main] INFO  r.s.e.DMEmul - Starting DMEmul on SBTRZN-AD000316 with PID 13492 (C:\Users\Mrykhin-EV\Downloads\dm-emul\build\classes\java\main started by Mrykhin-EV in C:\Users\Mrykhin-EV\Downloads\dm-emul)
+2020-03-26 18:22:21,907 [main] INFO  r.s.e.DMEmul - No active profile set, falling back to default profiles: default
+2020-03-26 18:22:21,939 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bf7ca37: startup date [Thu Mar 26 18:22:21 MSK 2020]; root of context hierarchy
+2020-03-26 18:22:21,995 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.2.4.Final
+2020-03-26 18:22:22,324 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context.xml]
+2020-03-26 18:22:22,400 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [influxdb-context.xml]
+2020-03-26 18:22:22,804 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9898 (http)
+2020-03-26 18:22:22,810 [main] INFO  o.a.c.c.StandardService - Starting service Tomcat
+2020-03-26 18:22:22,811 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2020-03-26 18:22:22,895 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:22:22,895 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 958 ms
+2020-03-26 18:22:23,002 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-26 18:22:23,005 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-26 18:22:23,005 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-26 18:22:23,005 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-26 18:22:23,005 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-26 18:22:23,349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bf7ca37: startup date [Thu Mar 26 18:22:21 MSK 2020]; root of context hierarchy
+2020-03-26 18:22:23,382 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bh-delivery/rest/api/v1/tasks/]}" onto public void ru.sbrf.efs_notification_ksh_dummy.modules.webserver.WebServerController.defaultGet(javax.servlet.http.HttpServletResponse) throws java.io.IOException,java.lang.InterruptedException
+2020-03-26 18:22:23,384 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-26 18:22:23,384 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-26 18:22:23,401 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:22:23,401 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:22:23,422 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:22:23,496 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-26 18:22:23,504 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9898"]
+2020-03-26 18:22:23,509 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler [http-nio-9898]
+2020-03-26 18:22:23,515 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-26 18:22:23,524 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9898 (http)
+2020-03-26 18:22:23,526 [main] INFO  r.s.e.DMEmul - Started DMEmul in 1.862 seconds (JVM running for 2.608)
+2020-03-26 18:26:46,067 [main] INFO  r.s.e.DMEmul - Starting DMEmul on SBTRZN-AD000316 with PID 14020 (C:\Users\Mrykhin-EV\Downloads\dm-emul\build\classes\java\main started by Mrykhin-EV in C:\Users\Mrykhin-EV\Downloads\dm-emul)
+2020-03-26 18:26:46,068 [main] INFO  r.s.e.DMEmul - No active profile set, falling back to default profiles: default
+2020-03-26 18:26:46,099 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9754d8: startup date [Thu Mar 26 18:26:46 MSK 2020]; root of context hierarchy
+2020-03-26 18:26:46,179 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.2.4.Final
+2020-03-26 18:26:46,532 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context.xml]
+2020-03-26 18:26:46,628 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [influxdb-context.xml]
+2020-03-26 18:26:47,229 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9898 (http)
+2020-03-26 18:26:47,240 [main] INFO  o.a.c.c.StandardService - Starting service Tomcat
+2020-03-26 18:26:47,241 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2020-03-26 18:26:47,339 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:26:47,339 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1240 ms
+2020-03-26 18:26:47,484 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-26 18:26:47,487 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-26 18:26:47,488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-26 18:26:47,488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-26 18:26:47,488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-26 18:26:47,884 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9754d8: startup date [Thu Mar 26 18:26:46 MSK 2020]; root of context hierarchy
+2020-03-26 18:26:47,920 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bh-delivery/rest/api/v1/tasks/]}" onto public void ru.sbrf.efs_notification_ksh_dummy.modules.webserver.WebServerController.defaultGet(javax.servlet.http.HttpServletResponse) throws java.io.IOException,java.lang.InterruptedException
+2020-03-26 18:26:47,922 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-26 18:26:47,922 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-26 18:26:47,941 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:26:47,942 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:26:47,964 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-26 18:26:48,065 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-26 18:26:48,076 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9898"]
+2020-03-26 18:26:48,081 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler [http-nio-9898]
+2020-03-26 18:26:48,089 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-26 18:26:48,099 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9898 (http)
+2020-03-26 18:26:48,102 [main] INFO  r.s.e.DMEmul - Started DMEmul in 2.437 seconds (JVM running for 3.456)
+2020-04-15 16:22:48,562 [main] INFO  r.s.e.DMEmul - Starting DMEmul on SBTRZN-AD000316 with PID 21488 (C:\Users\Mrykhin-EV\Downloads\dm-emul\build\classes\java\main started by Mrykhin-EV in C:\Users\Mrykhin-EV\Downloads\dm-emul)
+2020-04-15 16:22:48,564 [main] INFO  r.s.e.DMEmul - No active profile set, falling back to default profiles: default
+2020-04-15 16:22:48,619 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3857f613: startup date [Wed Apr 15 16:22:48 MSK 2020]; root of context hierarchy
+2020-04-15 16:22:48,763 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.2.4.Final
+2020-04-15 16:22:49,158 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context.xml]
+2020-04-15 16:22:49,290 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [influxdb-context.xml]
+2020-04-15 16:22:49,854 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9898 (http)
+2020-04-15 16:22:49,863 [main] INFO  o.a.c.c.StandardService - Starting service Tomcat
+2020-04-15 16:22:49,864 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2020-04-15 16:22:49,957 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-04-15 16:22:49,957 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1338 ms
+2020-04-15 16:22:50,080 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-15 16:22:50,083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-15 16:22:50,083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-15 16:22:50,083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-15 16:22:50,083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-15 16:22:50,549 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3857f613: startup date [Wed Apr 15 16:22:48 MSK 2020]; root of context hierarchy
+2020-04-15 16:22:50,593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dictionary-stab/]}" onto public void ru.sbrf.efs_notification_ksh_dummy.modules.webserver.WebServerController.defaultGet(javax.servlet.http.HttpServletResponse) throws java.io.IOException,java.lang.InterruptedException
+2020-04-15 16:22:50,595 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-15 16:22:50,596 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-15 16:22:50,615 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-15 16:22:50,615 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-15 16:22:50,638 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-15 16:22:50,729 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-15 16:22:50,740 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9898"]
+2020-04-15 16:22:50,746 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler [http-nio-9898]
+2020-04-15 16:22:50,750 [main] ERROR o.a.c.h.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-9898]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.DMEmul.main(DMEmul.java:12)
+2020-04-15 16:22:50,750 [main] ERROR o.a.c.c.StandardService - Failed to start connector [Connector[HTTP/1.1-9898]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9898]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.DMEmul.main(DMEmul.java:12)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 14 common frames omitted
+2020-04-15 16:22:50,755 [main] INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9898"]
+2020-04-15 16:22:50,755 [main] INFO  o.a.c.c.StandardService - Stopping service Tomcat
+2020-04-15 16:22:50,765 [main] INFO  o.a.c.u.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-04-15 16:22:50,765 [main] INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9898"]
+2020-04-15 16:22:50,765 [main] INFO  o.a.c.h.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9898"]
+2020-04-15 16:22:50,767 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-04-15 16:22:50,772 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9898 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9898, or configure this application to listen on another port.
+
+2020-04-15 16:22:50,774 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3857f613: startup date [Wed Apr 15 16:22:48 MSK 2020]; root of context hierarchy
+2020-04-15 16:22:50,775 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

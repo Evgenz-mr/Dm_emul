@@ -1,0 +1,1354 @@
+30 ������ 2018 �. 6:00:07 MSK[oks_jmsListenerContainerFactory-1] com.ibm.msg.client.wmq.internal.WMQConnection
+�������������� �������� ���������������, ��������� ���������� �������������� �������� �� ���������������: '
+                     ��������� : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: �������� ������ ����������.
+������ ���������� WebSphere MQ JMS.
+��� ����������� ������� ������ ���������� � ��������� �������������� ��������.
+                         ����� : class com.ibm.msg.client.jms.DetailedJMSException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [1] --> ��������� : com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2009' ('MQRC_CONNECTION_BROKEN').
+                         ����� : class com.ibm.mq.MQException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+����������:
+����������� ������� ��������� �������������� �������� � ���������� �������������� �������� ����������, �� ���������� �� ���������������.
+
+��������:
+���������� ���������������� ���������� ���������� � ���������� ��� ��������� ��� �������������� ��������.
+--------------------------------------------------------------------
+30 ������ 2018 �. 6:00:07 MSK[oks_jmsListenerContainerFactory-1] com.ibm.msg.client.wmq.internal.WMQConnection
+�������������� �������� ���������������, ��������� ���������� �������������� �������� �� ���������������: '
+                     ��������� : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: �������� ������ ����������.
+������ ���������� WebSphere MQ JMS.
+��� ����������� ������� ������ ���������� � ��������� �������������� ��������.
+                         ����� : class com.ibm.msg.client.jms.DetailedJMSException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [1] --> ��������� : com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2009' ('MQRC_CONNECTION_BROKEN').
+                         ����� : class com.ibm.mq.MQException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [2] --> ��������� : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         ����� : class com.ibm.mq.jmqi.JmqiException
+               ������� ������� : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [3] --> ��������� : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: �������� ������ ���������� 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         ����� : class com.ibm.mq.jmqi.JmqiException
+               ������� ������� : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     ������� [4] --> ��������� : java.net.SocketException: Connection reset
+                         ����� : class java.net.SocketException
+               ������� ������� : java.net.SocketInputStream.read(SocketInputStream.java:196)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:122)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+����������:
+����������� ������� ��������� �������������� �������� � ���������� �������������� �������� ����������, �� ���������� �� ���������������.
+
+��������:
+���������� ���������������� ���������� ���������� � ���������� ��� ��������� ��� �������������� ��������.
+--------------------------------------------------------------------
+30 ������ 2018 �. 8:50:23 MSK[oks_jmsListenerContainerFactory-2] com.ibm.msg.client.wmq.internal.WMQConnection
+�������������� �������� ���������������, ��������� ���������� �������������� �������� �� ���������������: '
+                     ��������� : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: �������� ������ ����������.
+������ ���������� WebSphere MQ JMS.
+��� ����������� ������� ������ ���������� � ��������� �������������� ��������.
+                         ����� : class com.ibm.msg.client.jms.DetailedJMSException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [1] --> ��������� : com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2009' ('MQRC_CONNECTION_BROKEN').
+                         ����� : class com.ibm.mq.MQException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+����������:
+����������� ������� ��������� �������������� �������� � ���������� �������������� �������� ����������, �� ���������� �� ���������������.
+
+��������:
+���������� ���������������� ���������� ���������� � ���������� ��� ��������� ��� �������������� ��������.
+--------------------------------------------------------------------
+30 ������ 2018 �. 8:50:28 MSK[oks_jmsListenerContainerFactory-2] com.ibm.msg.client.wmq.internal.WMQConnection
+�������������� �������� ���������������, ��������� ���������� �������������� �������� �� ���������������: '
+                     ��������� : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: �������� ������ ����������.
+������ ���������� WebSphere MQ JMS.
+��� ����������� ������� ������ ���������� � ��������� �������������� ��������.
+                         ����� : class com.ibm.msg.client.jms.DetailedJMSException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [1] --> ��������� : com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2009' ('MQRC_CONNECTION_BROKEN').
+                         ����� : class com.ibm.mq.MQException
+               ������� ������� : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [2] --> ��������� : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         ����� : class com.ibm.mq.jmqi.JmqiException
+               ������� ������� : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     ������� [3] --> ��������� : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: �������� ������ ���������� 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         ����� : class com.ibm.mq.jmqi.JmqiException
+               ������� ������� : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     ������� [4] --> ��������� : java.net.SocketException: Connection reset
+                         ����� : class java.net.SocketException
+               ������� ������� : java.net.SocketInputStream.read(SocketInputStream.java:196)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:122)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+����������:
+����������� ������� ��������� �������������� �������� � ���������� �������������� �������� ����������, �� ���������� �� ���������������.
+
+��������:
+���������� ���������������� ���������� ���������� � ���������� ��� ��������� ��� �������������� ��������.
+--------------------------------------------------------------------
+1 февраля 2018 г. 20:52:27 MSK[DispatchThread: [com.ibm.mq.jmqi.remote.impl.RemoteSession@1348352457[connectionId=414D51434D414E41474552372E4C5420E486675A07F61D2D;conversationId=11]]] com.ibm.msg.client.jms.internal.JmsProviderExceptionListener
+Исключительная ситуация доставлена в обработчик исключений соединений: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQConnection.consumer(WMQConnection.java:795)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.callEventHandler(RemoteHconn.java:2610)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.driveEventsEH(RemoteHconn.java:570)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.processHconn(RemoteDispatchThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.run(RemoteDispatchThread.java:250)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQConnection.consumer(WMQConnection.java:795)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.callEventHandler(RemoteHconn.java:2610)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.driveEventsEH(RemoteHconn.java:570)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.processHconn(RemoteDispatchThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.run(RemoteDispatchThread.java:250)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+null
+
+Действие:
+Дополнительную информацию смотрите в сведениях исключительной ситуации.
+--------------------------------------------------------------------
+1 февраля 2018 г. 20:52:27 MSK[DispatchThread: [com.ibm.mq.jmqi.remote.impl.RemoteSession@1928552327[connectionId=414D51434D414E41474552372E4C5420E486675A04F61D2D;conversationId=7]]] com.ibm.msg.client.jms.internal.JmsProviderExceptionListener
+Исключительная ситуация доставлена в обработчик исключений соединений: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQConnection.consumer(WMQConnection.java:795)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.callEventHandler(RemoteHconn.java:2610)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.driveEventsEH(RemoteHconn.java:570)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.processHconn(RemoteDispatchThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.run(RemoteDispatchThread.java:250)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQConnection.consumer(WMQConnection.java:795)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.callEventHandler(RemoteHconn.java:2610)
+                               : com.ibm.mq.jmqi.remote.api.RemoteHconn.driveEventsEH(RemoteHconn.java:570)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.processHconn(RemoteDispatchThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteDispatchThread.run(RemoteDispatchThread.java:250)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+null
+
+Действие:
+Дополнительную информацию смотрите в сведениях исключительной ситуации.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-5] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-6] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-1] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-5] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-4] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-4] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-2] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-2] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-6] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-1] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-3] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-3] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-7] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 5:55:01 MSK[oks_jmsListenerContainerFactory-5] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsConnectionImpl.close(JmsConnectionImpl.java:301)
+                               : com.ibm.mq.jms.MQConnection.close(MQConnection.java:93)
+                               : org.springframework.jms.connection.ConnectionFactoryUtils.releaseConnection(ConnectionFactoryUtils.java:80)
+                               : org.springframework.jms.listener.AbstractJmsListeningContainer.refreshSharedConnection(AbstractJmsListeningContainer.java:395)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:925)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.recoverAfterListenerSetupFailure(DefaultMessageListenerContainer.java:899)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1077)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsConnectionImpl.close(JmsConnectionImpl.java:301)
+                               : com.ibm.mq.jms.MQConnection.close(MQConnection.java:93)
+                               : org.springframework.jms.connection.ConnectionFactoryUtils.releaseConnection(ConnectionFactoryUtils.java:80)
+                               : org.springframework.jms.listener.AbstractJmsListeningContainer.refreshSharedConnection(AbstractJmsListeningContainer.java:395)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:925)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.recoverAfterListenerSetupFailure(DefaultMessageListenerContainer.java:899)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1077)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsConnectionImpl.close(JmsConnectionImpl.java:301)
+                               : com.ibm.mq.jms.MQConnection.close(MQConnection.java:93)
+                               : org.springframework.jms.connection.ConnectionFactoryUtils.releaseConnection(ConnectionFactoryUtils.java:80)
+                               : org.springframework.jms.listener.AbstractJmsListeningContainer.refreshSharedConnection(AbstractJmsListeningContainer.java:395)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:925)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer.recoverAfterListenerSetupFailure(DefaultMessageListenerContainer.java:899)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1077)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 9:45:11 MSK[oks_jmsListenerContainerFactory-8] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.checkJmqiCallSuccess(WMQMessageConsumer.java:119)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.getMsg(WMQConsumerShadow.java:1481)
+                               : com.ibm.msg.client.wmq.internal.WMQSyncConsumerShadow.receiveInternal(WMQSyncConsumerShadow.java:227)
+                               : com.ibm.msg.client.wmq.internal.WMQConsumerShadow.receive(WMQConsumerShadow.java:1192)
+                               : com.ibm.msg.client.wmq.internal.WMQMessageConsumer.receive(WMQMessageConsumer.java:460)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receiveInboundMessage(JmsMessageConsumerImpl.java:786)
+                               : com.ibm.msg.client.jms.internal.JmsMessageConsumerImpl.receive(JmsMessageConsumerImpl.java:486)
+                               : com.ibm.mq.jms.MQMessageConsumer.receive(MQMessageConsumer.java:212)
+                               : org.springframework.jms.support.destination.JmsDestinationAccessor.receiveFromConsumer(JmsDestinationAccessor.java:130)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveMessage(AbstractPollingMessageListenerContainer.java:416)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:302)
+                               : org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+                               : java.lang.Thread.run(Thread.java:745)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------
+2 февраля 2018 г. 9:45:11 MSK[oks_jmsListenerContainerFactory-8] com.ibm.msg.client.wmq.internal.WMQConnection
+Исключительная ситуация проигнорирована, поскольку обработчик исключительных ситуаций не зарегистрирован: '
+                     Сообщение : com.ibm.msg.client.jms.DetailedJMSException: JMSWMQ1107: Возникла ошибка соединения.
+Ошибка соединения WebSphere MQ JMS.
+Для определения причины ошибки обратитесь к связанной исключительной ситуации.
+                         Класс : class com.ibm.msg.client.jms.DetailedJMSException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.reasonToException(Reason.java:580)
+                               : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:216)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [1] --> Сообщение : com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2009' ('MQRC_CONNECTION_BROKEN').
+                         Класс : class com.ibm.mq.MQException
+               Блокнот вкладок : com.ibm.msg.client.wmq.common.internal.Reason.createException(Reason.java:204)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:716)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [2] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteSession.getConnection(RemoteSession.java:513)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1379)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteSession.allocateMQAPI(RemoteSession.java:1347)
+                               : com.ibm.mq.jmqi.remote.api.RemoteFAP.MQDISC(RemoteFAP.java:2601)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.disconnect(WMQSession.java:704)
+                               : com.ibm.msg.client.wmq.internal.WMQSession.close(WMQSession.java:674)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:523)
+                               : com.ibm.msg.client.jms.internal.JmsSessionImpl.close(JmsSessionImpl.java:305)
+                               : com.ibm.mq.jms.MQSession.close(MQSession.java:293)
+                               : org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:108)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1207)
+                               : org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1066)
+                               : java.lang.Thread.run(Thread.java:745)
+     Вызвано [3] --> Сообщение : com.ibm.mq.jmqi.JmqiException: CC=2;RC=2009;AMQ9213: Возникла ошибка соединения 'TCP'. [1=java.net.SocketException[Connection reset],4=TCP,5=sockInStream.read]
+                         Класс : class com.ibm.mq.jmqi.JmqiException
+               Блокнот вкладок : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1545)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+     Вызвано [4] --> Сообщение : java.net.SocketException: Connection reset
+                         Класс : class java.net.SocketException
+               Блокнот вкладок : java.net.SocketInputStream.read(SocketInputStream.java:209)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteTCPConnection.receive(RemoteTCPConnection.java:1536)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:790)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:751)
+                               : com.ibm.mq.jmqi.remote.impl.RemoteRcvThread.run(RemoteRcvThread.java:154)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1214)
+'.
+
+Объяснение:
+Произведена попытка доставить исключительную ситуацию в обработчик исключительных ситуаций соединений, но обработчик не зарегистрирован.
+
+Действие:
+Необходимо зарегистрировать обработчик исключений в соединении для получения его исключительных ситуаций.
+--------------------------------------------------------------------

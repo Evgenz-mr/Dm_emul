@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="classpath:influxdb-context.xml"/>
+
+
+    <bean id="messageTextExtractor" class="ru.sbrf.efs_notification_ksh_dummy.core.extractors.MessageTextExtractor"/>
+    <bean id="operationNameExtractor" class="ru.sbrf.efs_notification_ksh_dummy.core.extractors.OperationNameExtractor"/>
+    <bean id="rqUIDExtractor" class="ru.sbrf.efs_notification_ksh_dummy.core.extractors.RqUIDExtractor"/>
+
+
+    <bean id="jmsListenerContainerFactory" class="ru.sbrf.efs_notification_ksh_dummy.core.NoBean"/>
+</beans>

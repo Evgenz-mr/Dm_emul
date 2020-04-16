@@ -1,0 +1,177 @@
+2018-01-30 08:50:31,110 [oks_jmsListenerContainerFactory-2] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: �� ������� ������������ � �������������� �������� 'MANAGER7.LT' � ������ ���������� 'Client' � ������� ����� 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-01-30 08:50:36,110 [oks_jmsListenerContainerFactory-2] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: �� ������� ������������ � �������������� �������� 'MANAGER7.LT' � ������ ���������� 'Client' � ������� ����� 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: �� ������� ��������� ����� WebSphere MQ � ����� '2' ('MQCC_FAILED') ������� '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-01-30 11:30:57,752 [main] ERROR o.a.c.h.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-9876]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.EfsUKOkshDummy.main(EfsNotificationKshDummy.java:12)
+2018-01-30 11:30:57,753 [main] ERROR o.a.c.c.StandardService - Failed to start connector [Connector[HTTP/1.1-9876]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9876]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.EfsUKOkshDummy.main(EfsNotificationKshDummy.java:12)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 14 common frames omitted
+2018-01-30 11:30:57,783 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9876 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9876, or configure this application to listen on another port.
+
+2018-01-31 11:48:11,812 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a038cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:12,212 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a058cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:12,418 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a068cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:12,685 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a078cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:12,776 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a088cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:12,940 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a098cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:13,568 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a0a8cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:48:13,602 [oks_handlers-pool-1-thread-1] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a0b8cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:49:17,667 [oks_handlers-pool-1-thread-2] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a0c8cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:50:54,220 [oks_handlers-pool-1-thread-3] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a0e8cd12c', unexpected operation: SendClientOfferRq
+2018-01-31 11:59:00,242 [oks_handlers-pool-1-thread-4] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a78bbce2c', unexpected operation: SendClientOfferRq
+2018-01-31 11:59:01,091 [oks_handlers-pool-1-thread-4] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a8abbce2c', unexpected operation: SendClientOfferRq
+2018-01-31 11:59:01,093 [oks_handlers-pool-1-thread-4] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a6432d22c', unexpected operation: SendClientOfferRq
+2018-01-31 11:59:40,230 [oks_handlers-pool-1-thread-4] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675aba8ad22c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:26,525 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a4477d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:39,630 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5177d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:39,795 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5277d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:39,960 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5377d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,131 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5477d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,276 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5577d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,410 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5677d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,552 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5777d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,717 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5877d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:40,874 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5977d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:41,019 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5a77d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:41,183 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5b77d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:41,351 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5c77d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:39:41,495 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5d77d62c', unexpected operation: SendClientOfferRq
+2018-01-31 12:40:26,794 [oks_handlers-pool-1-thread-5] ERROR r.s.e.m.m.o.RequestHandler - JMSMessageID 'ID:414d51204d414e41474552372e4c5420e486675a5e77d62c', unexpected operation: SendClientOfferRq
+2018-02-02 05:55:01,711 [oks_jmsListenerContainerFactory-5] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-02-02 05:55:06,712 [oks_jmsListenerContainerFactory-5] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-02-02 09:45:11,532 [oks_jmsListenerContainerFactory-8] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-02-02 09:45:16,532 [oks_jmsListenerContainerFactory-8] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-02-02 09:45:24,083 [oks_jmsListenerContainerFactory-8] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2018-02-02 09:45:29,083 [oks_jmsListenerContainerFactory-8] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'queue:///UCN.UFS.ASYNC.IN' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: JMSWMQ0018: Не удалось подключиться к администратору очередей 'MANAGER7.LT' в режиме соединения 'Client' с помощью хоста 'shai27(1424)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: Не удалось выполнить вызов WebSphere MQ с кодом '2' ('MQCC_FAILED') причина '2538' ('MQRC_HOST_NOT_AVAILABLE').
+2020-04-15 16:22:50,750 [main] ERROR o.a.c.h.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-9898]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.DMEmul.main(DMEmul.java:12)
+2020-04-15 16:22:50,750 [main] ERROR o.a.c.c.StandardService - Failed to start connector [Connector[HTTP/1.1-9898]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9898]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at ru.sbrf.efs_notification_ksh_dummy.DMEmul.main(DMEmul.java:12)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 14 common frames omitted
+2020-04-15 16:22:50,772 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9898 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9898, or configure this application to listen on another port.
+

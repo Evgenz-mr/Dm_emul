@@ -1,0 +1,11 @@
+influxdb:
+  connection:
+    url: http://kamsa11:8086/
+    username: ---
+    password: ---
+  batching:
+    byCount: 1000
+    byTimeInMs: 60000
+  database: null
+server:
+  port: 9595

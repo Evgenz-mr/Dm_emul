@@ -1,0 +1,49 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.2.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+		maven { url "http://sbtnexus.ca.sbrf.ru:8081/nexus/content/groups/public/" }
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	maven { url "http://sbtnexus.ca.sbrf.ru:8081/nexus/content/groups/public/" }
+	flatDir {
+		dirs 'lib/ibm'
+	}
+}
+
+dependencies {
+	compileOnly "org.projectlombok:lombok:1.16.10"
+	annotationProcessor 'org.projectlombok:lombok:1.16.10'
+	compile 'org.apache.commons:commons-lang3:3.4'
+	compile("org.springframework.boot:spring-boot-starter-web")
+	// for groovy bean config
+//	compile 'org.codehaus.groovy:groovy-all:2.4.7'
+	compile 'org.springframework:spring-jms:4.3.4.RELEASE'
+	compile 'javax.jms:jms:1.1'
+	compile 'org.influxdb:influxdb-java:2.5'
+//	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter:1.4.2.RELEASE'
+	compile fileTree(dir: 'lib/ibm', include: '*.jar')
+	compile fileTree(dir: 'lib', include: '*.jar')
+	testCompile 'org.springframework.boot:spring-boot-starter-test:1.4.2.RELEASE'
+}
+
+if (!hasProperty('mainClass')) {
+	ext.mainClass = 'org.foo.Bar'
+}
