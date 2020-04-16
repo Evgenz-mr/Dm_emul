@@ -16,9 +16,6 @@ import java.io.PrintWriter;
  */
 @Slf4j
 @Controller
-
-
-
 public class WebServerController {
 
     int Get_random(String... args) {
@@ -28,8 +25,7 @@ public class WebServerController {
         return rnd;
     }
 
-    public static int rnd(int max)
-    {
+    public static int rnd(int max) {
         return (int) (Math.random() * ++max);
     }
 
