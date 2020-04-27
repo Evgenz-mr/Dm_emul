@@ -8,4 +8,4 @@ influxdb:
     byTimeInMs: 60000
   database: null
 server:
-  port: 9595
+  port: 9080
