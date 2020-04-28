@@ -1,8 +1,5 @@
 package ru.sbrf.efs_notification_ksh_dummy.modules.webserver;
 
-import com.sun.org.apache.xpath.internal.objects.XNull;
-import io.restassured.path.json.JsonPath;
-
 /**
  * Класс для вывода страницы приветсвия, можно удалять
  */

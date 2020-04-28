@@ -139,7 +139,7 @@ public class Stub {
                         "            }";
                 break;
             case "RATE_QUOTE_ARK":
-                if (JsonPath.from(requestConv).get("request.body.query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("75")) {
+                if (JsonPath.from(requestConv).get("query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("75")) {
                     s = "true,\n" +
                             "                    \"body\" :{\n" +
                             "                \"responseId\" :\"eb554cf8-cd39-4581-bb4d-ad57fc0a5b0d\",\n" +
@@ -197,7 +197,7 @@ public class Stub {
                 }
                 break;
             case "CAS_E0_CURRENCY_NEW":
-                if (JsonPath.from(requestConv).get("request.body.query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("RUB")) {
+                if (JsonPath.from(requestConv).get("query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("RUB")) {
                     s = "true,\n" +
                             "                    \"body\" :{\n" +
                             "                \"responseId\" :\"07e1584e-9c16-4f6c-ac24-1af6f2dca577\",\n" +
@@ -219,8 +219,8 @@ public class Stub {
                             "                    \"values\" : [ [\"java.math.BigDecimal\", 2 ] ]\n" +
                             "                }\n" +
                             "            }";
-                } else if (JsonPath.from(requestConv).get("request.body.query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("GBP")) {
-                    if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
+                } else if (JsonPath.from(requestConv).get("query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("GBP")) {
+                    if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"ad9be9a1-10e0-4d3b-b210-b76c75357c63\",\n" +
@@ -238,7 +238,7 @@ public class Stub {
                                 "                        \"values\" : [ [\"java.math.BigDecimal\", 2 ] ]\n" +
                                 "                    }\n" +
                                 "                }";
-                    } else if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
+                    } else if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"31df4fc6-27ea-4ee0-a453-d81c02c82a84\",\n" +
@@ -259,8 +259,8 @@ public class Stub {
                     } else {
                         s = "ifelsssss";
                     }
-                } else if (JsonPath.from(requestConv).get("request.body.query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("JPY")) {
-                    if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
+                } else if (JsonPath.from(requestConv).get("query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("JPY")) {
+                    if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"66477934-0429-4a71-8984-4ab76e025737\",\n" +
@@ -283,7 +283,7 @@ public class Stub {
                                 "                        \"values\" : [ [\"java.math.BigDecimal\", 0 ] ]\n" +
                                 "                    }\n" +
                                 "                }";
-                    } else if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
+                    } else if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"86c5094b-bd02-4523-a867-d2e80bb3f814\",\n" +
@@ -308,8 +308,8 @@ public class Stub {
                                 "                }";
                     } else
                         s = "ifelsssss";
-                } else if (JsonPath.from(requestConv).get("request.body.query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("USD")) {
-                    if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
+                } else if (JsonPath.from(requestConv).get("query.filter.compositeFilter.filters[0].propertyFilter.values[0]").toString().equalsIgnoreCase("USD")) {
+                    if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_digit")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"3a5cd8d2-4497-420a-8d47-d7309cb4e86d\",\n" +
@@ -327,7 +327,7 @@ public class Stub {
                                 "                        \"values\" : [ [\"java.math.BigDecimal\", 2 ] ]\n" +
                                 "                    }\n" +
                                 "                }";
-                    } else if (JsonPath.from(requestConv).get("request.body.query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
+                    } else if (JsonPath.from(requestConv).get("query.resultAttrs[0]").toString().equalsIgnoreCase("cas_cr_num")) {
                         s = "true,\n" +
                                 "                        \"body\" :{\n" +
                                 "                    \"responseId\" :\"075a2bbd-04f1-46de-b7b2-11741a1fa450\",\n" +
