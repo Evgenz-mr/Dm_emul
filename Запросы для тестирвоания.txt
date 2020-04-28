@@ -1,0 +1,66 @@
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                            -CrossCourse
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+http://10.106.49.91:9080/currency-converter-bh/rest/v1/calculateCrossCourseConversion
+
+
+Host: 10.106.49.91:9080
+Content-Length: 528
+Content-Type: application/json
+
+
+{
+    "instrumentCredit": "NSTR-1",
+    "channel": "CHNL-1",
+    "sellCurrency": "GBP",
+    "office": null,
+    "buyCurrency": "USD",
+    "packageType": "5",
+    "division": null,
+    "instrumentDebit": "NSTR-1",
+    "bank": "44",
+    "buyAmount": 10,
+    "sellAmount": null,
+    "operationId": "663662f51bd34dfa98261a222bcd7a02",
+    "conversionDateTime": "2019-12-06T23:00:00.000+0004",
+    "atm": null,
+    "auditContextUuid": "22281347-bea5-4b0f-b3d4-6a58e4fa9879",
+    "card": null,
+    "option": null
+}
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+                               -Simple
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+http://10.106.49.91:9080/currency-converter-bh/rest/v1/calculateSimpleConversion
+
+
+Host: 10.106.49.91:9080
+Content-Length: 528
+Content-Type: application/json
+
+
+{
+"instrumentCredit":"NSTR-1",
+"channel":"CHNL-1",
+"office":null,
+"sellCurrency":"USD",
+"buyCurrency":"RUB",
+"packageType":"0",
+"division":null,
+"instrumentDebit":"NSTR-1",
+"bank":"52",
+"buyAmount":"1000",
+"sellAmount":null,
+"operationId":"e4382e81e85f42c0a3425841a697dcd0",
+"conversionDateTime":"2020-03-27T10:05:40.000+0004",
+"atm":null,
+"auditContextUuid":"ae7d511d-8502-4f16-abed-2346708a3b94",
+"card":null,"option":null
+}
